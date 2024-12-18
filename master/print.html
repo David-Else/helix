@@ -1470,6 +1470,8 @@ See the documentation page on <a href="./pickers.html">pickers</a> for more info
 <tr><td><code>command_palette</code></td><td>Open command palette</td><td>normal: <code>&lt;space&gt;?</code>, select: <code>&lt;space&gt;?</code></td></tr>
 <tr><td><code>goto_word</code></td><td>Jump to a two-character label</td><td>normal: <code>gw</code></td></tr>
 <tr><td><code>extend_to_word</code></td><td>Extend to a two-character label</td><td>select: <code>gw</code></td></tr>
+<tr><td><code>goto_next_tabstop</code></td><td>goto next snippet placeholder</td><td></td></tr>
+<tr><td><code>goto_prev_tabstop</code></td><td>goto next snippet placeholder</td><td></td></tr>
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h2 id="language-support"><a class="header" href="#language-support">Language Support</a></h2>
 <p>The following languages and Language Servers are supported. To use
@@ -2513,6 +2515,7 @@ berry = "#2A2A4D"
 <tr><td><code>ui.text.focus</code></td><td>The currently selected line in the picker</td></tr>
 <tr><td><code>ui.text.inactive</code></td><td>Same as <code>ui.text</code> but when the text is inactive (e.g. suggestions)</td></tr>
 <tr><td><code>ui.text.info</code></td><td>The key: command text in <code>ui.popup.info</code> boxes</td></tr>
+<tr><td><code>ui.text.directory</code></td><td>Directory names in prompt completion</td></tr>
 <tr><td><code>ui.virtual.ruler</code></td><td>Ruler columns (see the <a href="./configuration.html#editor-section"><code>editor.rulers</code> config</a>)</td></tr>
 <tr><td><code>ui.virtual.whitespace</code></td><td>Visible whitespace characters</td></tr>
 <tr><td><code>ui.virtual.indent-guide</code></td><td>Vertical indent width guides</td></tr>
@@ -2625,7 +2628,6 @@ Cmd-s = ":write" # Cmd or Win or Meta and 's' to write
 <tr><td>Backspace</td><td><code>"backspace"</code></td></tr>
 <tr><td>Space</td><td><code>"space"</code></td></tr>
 <tr><td>Return/Enter</td><td><code>"ret"</code></td></tr>
-<tr><td>-</td><td><code>"minus"</code></td></tr>
 <tr><td>Left</td><td><code>"left"</code></td></tr>
 <tr><td>Right</td><td><code>"right"</code></td></tr>
 <tr><td>Up</td><td><code>"up"</code></td></tr>
@@ -2642,6 +2644,13 @@ Cmd-s = ":write" # Cmd or Win or Meta and 's' to write
 </tbody></table>
 </div>
 <p>Keys can be disabled by binding them to the <code>no_op</code> command.</p>
+<p>All other keys such as <code>?</code>, <code>!</code>, <code>-</code> etc. can be used literally:</p>
+<pre><code class="language-toml">[keys.normal]
+"?" = ":write"
+"!" = ":write"
+"-" = ":write"
+</code></pre>
+<p>Note: <code>-</code> can't be used when combined with a modifier, for example <code>Alt</code> + <code>-</code> should be written as <code>A-minus</code>. <code>A--</code> is not accepted.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="languages"><a class="header" href="#languages">Languages</a></h2>
 <p>Language-specific settings and settings for language servers are configured
 in <code>languages.toml</code> files.</p>
