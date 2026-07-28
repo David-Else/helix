@@ -140,7 +140,7 @@
 | inko | ✓ | ✓ | ✓ | ✓ |  |  |
 | janet | ✓ |  | ✓ |  | ✓ |  |
 | java | ✓ | ✓ | ✓ | ✓ | ✓ | `jdtls` |
-| javascript | ✓ | ✓ | ✓ | ✓ | ✓ | `tsc` |
+| javascript | ✓ | ✓ | ✓ | ✓ | ✓ | `typescript-language-server` |
 | jinja | ✓ |  |  |  |  |  |
 | jjconfig | ✓ | ✓ | ✓ |  |  | `taplo`, `tombi` |
 | jjdescription | ✓ |  |  |  |  |  |
@@ -153,7 +153,7 @@
 | json5 | ✓ | ✓ | ✓ |  | ✓ |  |
 | jsonc | ✓ | ✓ | ✓ |  | ✓ | `vscode-json-language-server` |
 | jsonnet | ✓ |  |  |  |  | `jsonnet-language-server` |
-| jsx | ✓ | ✓ | ✓ | ✓ | ✓ | `tsc` |
+| jsx | ✓ | ✓ | ✓ | ✓ | ✓ | `typescript-language-server` |
 | julia | ✓ | ✓ | ✓ | ✓ | ✓ | `julia` |
 | just | ✓ | ✓ | ✓ | ✓ |  | `just-lsp` |
 | kcl | ✓ |  |  |  |  | `kcl-language-server` |
@@ -309,7 +309,7 @@
 | tsq | ✓ |  |  |  | ✓ | `ts_query_ls` |
 | tsx | ✓ | ✓ | ✓ | ✓ | ✓ | `typescript-language-server` |
 | twig | ✓ |  |  |  |  |  |
-| typescript | ✓ | ✓ | ✓ | ✓ | ✓ | `tsc` |
+| typescript | ✓ | ✓ | ✓ | ✓ | ✓ | `typescript-language-server` |
 | typespec | ✓ | ✓ | ✓ |  |  | `tsp-server` |
 | typst | ✓ | ✓ |  | ✓ |  | `tinymist` |
 | ungrammar | ✓ |  |  |  |  |  |
