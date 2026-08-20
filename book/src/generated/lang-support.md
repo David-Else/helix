@@ -307,7 +307,7 @@
 | toml | ✓ | ✓ | ✓ | ✓ | ✓ | `taplo`, `tombi` |
 | tql | ✓ |  | ✓ |  |  |  |
 | tsq | ✓ |  |  |  | ✓ | `ts_query_ls` |
-| tsx | ✓ | ✓ | ✓ | ✓ | ✓ | `typescript-language-server` |
+| tsx | ✓ | ✓ | ✓ | ✓ | ✓ | `tsc` |
 | twig | ✓ |  |  |  |  |  |
 | typescript | ✓ | ✓ | ✓ | ✓ | ✓ | `tsc` |
 | typespec | ✓ | ✓ | ✓ |  |  | `tsp-server` |

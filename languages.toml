@@ -272,6 +272,15 @@ inlayHints.parameterNames.enabled = "all"
 inlayHints.propertyDeclarationTypes.enabled = true
 inlayHints.variableTypes.enabled = true
 
+[language-server.tsc.config.tsx]
+format.enabled = false
+inlayHints.enumMemberValues.enabled = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.parameterTypes.enabled = true
+inlayHints.parameterNames.enabled = "all"
+inlayHints.propertyDeclarationTypes.enabled = true
+inlayHints.variableTypes.enabled = true
+
 [language-server.tsc.config.jsx]
 format.enabled = false
 inlayHints.enumMemberValues.enabled = true
@@ -1106,7 +1115,7 @@ file-types = ["tsx"]
 roots = [ "package.json", "tsconfig.json" ]
 comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
-language-servers = [ "typescript-language-server" ]
+language-servers = [ "tsc" ]
 indent = { tab-width = 2, unit = "  " }
 
 [[grammar]]
